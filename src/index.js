@@ -39,4 +39,42 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+// Images
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = siteContent.images['logo-img'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.images['cta-img'];
+
+const middleImg = document.querySelector('#middle-img');
+middleImg.src = siteContent.images['accent-img'];
+
+// Text
+
+// const ctaHTag = document.querySelector('#cta-text h1');
+// ctaHTag.textContent = siteContent.cta.h1;
+
+// const ctaButton = document.querySelector('#cta-text button');
+// ctaButton.textContent = siteContent.cta.button;
+
+// const topHTag = document.querySelector('#top-content h4');
+// topHTag.textContent = siteContent['main-content']['features-h4'];
+
+// Footer 
+const footLink = document.querySelector('footer a');
+footLink.textContent = siteContent.footer.copyright;
+footLink.classList.add('bold');
+
+// Contact 
+const contact = document.querySelector('section.contact');
+contact.querySelector('h4').textContent = siteContent.contact['contact-h4'];
+
+
+
+
+
+
+
+
+
+
