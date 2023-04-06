@@ -49,16 +49,6 @@ ctaImg.src = siteContent.images['cta-img'];
 const middleImg = document.querySelector('#middle-img');
 middleImg.src = siteContent.images['accent-img'];
 
-// Text
-
-// const ctaHTag = document.querySelector('#cta-text h1');
-// ctaHTag.textContent = siteContent.cta.h1;
-
-// const ctaButton = document.querySelector('#cta-text button');
-// ctaButton.textContent = siteContent.cta.button;
-
-// const topHTag = document.querySelector('#top-content h4');
-// topHTag.textContent = siteContent['main-content']['features-h4'];
 
 // Footer 
 const footLink = document.querySelector('footer a');
@@ -73,8 +63,35 @@ contact.querySelector('h4').textContent = siteContent.contact['contact-h4'];
  contact.children[3].textContent = siteContent.contact.email;
 
 
- //main content
+ //top content
+const topContent = document.querySelector('.top-content');
 
+topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent.children[0].children[1].textContent = siteContent['main-content']['features-content'];
+
+topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+//bottom content
+const bottomContent = document.querySelector('.bottom-content');
+console.log(bottomContent);
+
+bottomContent.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent.children[0].children[1].textContent = siteContent['main-content']['services-content'];
+
+bottomContent.children[1].children[0].textContent = siteContent['main-content']['product-h4'];
+bottomContent.children[1].children[1].textContent = siteContent['main-content']['product-content'];
+
+bottomContent.children[2].children[0].textContent = siteContent['main-content']['vision-h4'];
+bottomContent.children[2].children[1].textContent = siteContent['main-content']['vision-content'];
+
+// cta
+const ctaText = document.querySelector('.cta-text');
+
+ctaText.children[0].textContent = siteContent.cta.h1;
+ctaText.children[1].textContent = siteContent.cta.button;
+
+//header
 
 
 
