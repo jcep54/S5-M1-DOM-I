@@ -92,7 +92,15 @@ ctaText.children[0].textContent = siteContent.cta.h1;
 ctaText.children[1].textContent = siteContent.cta.button;
 
 //header
+const headerNav = document.querySelector('header nav');
+console.log(headerNav)
 
+headerNav.children[0].textContent = siteContent.nav['nav-item-1'];
+headerNav.children[1].textContent = siteContent.nav['nav-item-2'];
+headerNav.children[2].textContent = siteContent.nav['nav-item-3'];
+headerNav.children[3].textContent = siteContent.nav['nav-item-4'];
+headerNav.children[4].textContent = siteContent.nav['nav-item-5'];
+headerNav.children[5].textContent = siteContent.nav['nav-item-6'];
 
 
 
